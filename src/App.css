@@ -1,38 +1,160 @@
+body {
+  background: #ecf1f1;
+  padding: 0;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title a {
+  padding-top: 5px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
+  width: 80%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-4,
+.sec-5,
+.sec-6 {
+  margin-left: 20px;
+}
+
+.sec-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#message {
+  width: 60%;
+  height: 60px;
+  resize: none;
+}
+
+.action {
+  width: 60%;
+}
+
+.noti-sett {
+  width: 60%;
+}
+
+.check-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.ios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.sec-3 {
+  width: 100%;
+  height: auto;
+}
+
+.sec-4 {
+  width: 100%;
+  height: auto;
+}
+
+.checker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.system {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 10%;
+  height: 50px;
+  border: 1px solid #808080;
+}
+.box-check {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sec-6 {
+  width: 40%;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.noti-sec-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.specific-date {
+  display: none;
+}
+
+.specific-date.open {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+.hour {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  width: auto;
+}
+
+.target {
+  display: none;
+}
+
+.target.open {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
 }
