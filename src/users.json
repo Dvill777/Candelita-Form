@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "root",
+        "email": "root@candelitatv.com",
+        "password": "2452"
+    },
+    {
+        "id": 2,
+        "name": "kevin",
+        "email": "kevin@auraux.com",
+        "password": "2452"
+    },
+    {
+        "id": 3,
+        "name": "Candelita7",
+        "email": "enpiedeguerra777@yahoo.com",
+        "password": "Candelita@7"
+    },
+    {
+        "id": 4,
+        "name": "WebMaster",
+        "email": "ittecpr@gmail.com",
+        "password": "Play@2022"
+    }
+]

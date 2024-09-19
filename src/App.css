@@ -1,14 +1,15 @@
 body {
-  background: #ecf1f1;
+  background: #ecf1f1!important;
   padding: 0;
   margin: 0;
 }
-
+p{
+  margin-bottom: 0px!important;
+}
 .App {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: row;
+  min-height: 100vh;
 }
 
 .title {
@@ -17,6 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-top: 25px;
 }
 
 .title a {
@@ -31,7 +33,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-bottom: 30px;
+  gap: 15px;
+  padding: 30px;
+  margin-bottom: 25px;
 }
 
 .sec-1,
@@ -41,6 +45,9 @@ body {
 .sec-5,
 .sec-6 {
   margin-left: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sec-1 {
@@ -60,8 +67,25 @@ body {
   width: 60%;
   height: 60px;
   resize: none;
+  padding: 10px;
+  border-color: hsl(0, 0%, 80%);
 }
-
+.messageTitle{
+  height: auto;
+  width: 60%;
+  padding: 5px 10px;
+  border-color: hsl(0, 0%, 80%);
+}
+.ctaButton{
+  color: #fff;
+  width: fit-content;
+  background-color: #73be04;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 25px 20px 0px auto;
+  text-decoration: none;
+}
 .action {
   width: 60%;
 }
@@ -105,16 +129,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 10%;
-  height: 50px;
+  width: 127px;
+  height: 100px;
   border: 1px solid #808080;
+  padding: 16px;
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+}
+.system span{
+  font-size: .7rem;
 }
 .box-check {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
+.hidden{    
+  visibility: hidden;
+}
 .sec-6 {
   width: 40%;
   text-align: left;
@@ -158,3 +191,211 @@ body {
   width: 90%;
   height: auto;
 }
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    border: 1px solid #2d2d2d;
+    border-radius: 17px;
+    box-shadow: 13px 8px 15px 20px rgb(0 0 0 / 13%);
+    margin: 0 auto;
+    width: 35%;
+    background: #000000c7;
+    gap: 15px;
+}
+
+.login-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #ffffffd4;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 6.5px 10px;
+  width: 100%;
+}
+
+.login-form button {
+  background-color: #ffffff00;
+  color: white;
+  padding: 7px 14px;
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  scale: 1.05;
+}
+.login-form div.contentBox{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.logo-round{
+  width: 10%;
+}
+.logout{
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  padding: 25px 0px;
+  align-items: center;
+}
+.logoutCta{
+  margin-right: 25px;
+    background: #c1121f;
+    text-decoration: none;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 22px;
+    font-weight: 600;
+    font-size: .8rem;
+    cursor: pointer;
+}
+.greetext{
+  font-family: sans-serif;
+  color: #2f2f2f;
+  font-weight: 600;
+}
+.login{
+  background: #333492;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  flex-direction: column;
+}
+@media (orientation: portrait) {
+  .login{
+    background: url('./static/bg-full.jpg');
+    background-size: 100% auto;
+
+  }
+  .login-form{
+    width: 90%;
+  }
+  .login-form div.contentBox {
+    width: 86%;
+  }
+  .logo-round{
+    width: 40%;
+  }
+  .form {
+    width: 95%;
+    padding: 15px;
+  }
+  .messageTitle {
+    width: 95%;
+  }
+  #message {
+    width: 95%;
+    height: 100px;
+  }
+  .action {
+    width: 95%;
+  }
+  .system {
+    width: 30%;
+  }
+  p{
+    margin-bottom: 0px!important;
+  }
+  .sec-1,.sec-2,.sec-3,.sec-4,.sec-5,.sec-6 {
+    margin-left: 0px;
+  }
+  .ctaButton {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .sec-6{
+    width: 100%;
+  }
+  .logout {
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 10px;
+  }
+  .logoutCta {
+    margin-right: 0px;
+  }
+  .title {
+    align-self: flex-start;
+    margin-left: 10px;
+}
+}
+
+.focus{
+  border: 1px solid #4caf50;
+}
+
+.focus::after{
+  content: "✔";
+  color: #4caf50;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.dashboard{
+  width: 92%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.menuVert{
+  width: 3.5%;
+  height: 100vh;
+  background-color: #272727;
+  position: sticky;
+  top: 0;
+  justify-content: normal;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.link{
+    width: 35%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    color:#ecf1f1;
+    display:flex;
+    cursor: pointer;
+}
+.link:hover{
+  scale: 1.1;
+  color:#f4f4f4;
+  transition: 300ms;
+
+}
+.bottom{
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+.bottom:hover{
+  color: hsl(356, 67%, 54%);  
+}
+.avatar{
+  justify-content: center;
+  display: flex;
+  margin-top: 2rem;
+}
+.avatarImg{
+  width: 90%;
+}
+.top{
+  margin-top: auto;
+}
+
